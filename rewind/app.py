@@ -11,3 +11,6 @@ def signup():
     app.users[app.idCnt] = newUser
     app.idCnt += 1
     return jsonify(newUser)
+
+if __name__ == '__main__':
+    app.run()
